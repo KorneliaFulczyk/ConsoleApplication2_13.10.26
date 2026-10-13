@@ -127,32 +127,73 @@ int main()
 
 //zadanie 7
 /*{
-	int r1, r2, r3, r4, r5, r6, r7, r8, r9, r10;
-    cout << "Podaj 10 liczb rzeczywistych: \n";
-	cin >> r1 >> r2 >> r3 >> r4 >> r5 >> r6 >> r7 >> r8 >> r9 >> r10;
+    int x;
+    for(int i=0;i<10;i++)
+    {
+        cout << "Podaj liczbe: ";
+        cin >> x;
+        if (x % 2 == 0) cout <<"Twoja liczba: "<< x<< " jest parzysta" << endl;
+        cout << endl;
 
-    if (r1 > 0) {
-        cout << "Wyswietlam liczby dodatnie: " << r1 << endl;
 
-
-	}
+    }
 }
-
-// dokoncze pozniej 
 */
 
+
+
 //zadanie 8 
+/*
 {
-    for (int = 0; i <= 100, i++)
+
+    for (int i = 0; i <= 100; i++)
+    {
+    if (i%2==0)
+        cout << i <<endl;
+        }
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+*/
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+//zadanie 9
+/*{
+    int n;
+        cout << "Wprowadz dzielnik: \n";
+        cin >> n;
+
+        cout << "Te liczby z przedzialu 0 - 100 sa podzielne przez " << n << endl;
+
+        for (int i = 0; i <= 100; i++)
+        {
+            if (i % n == 0)
+                cout << i << endl;
+        }
+
+    }
+    */
+
+
+    //zadañ 10
+
+    {
+        int n;
+        cout << "wprowadz dzielnik: ";
+        cin >> n;
+
+        for (int i = 0; i <= 100; i++);
+        if (i%n==0)
+            cout
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
