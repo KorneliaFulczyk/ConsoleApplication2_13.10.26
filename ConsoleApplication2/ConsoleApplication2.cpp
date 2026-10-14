@@ -175,23 +175,113 @@ int main()
 
     //zadañ 10
 
-    {
+ /*
+ {
         int n;
+        int licznik = 0;
         cout << "wprowadz dzielnik: ";
         cin >> n;
 
-        for (int i = 0; i <= 100; i++);
-        if (i%n==0)
-            cout
+        for (int i = 0; i <= 100; i++)
+        {
+            if (i % n == 0)
+            {
+                licznik++;
+            }
+        }
+        cout << "Liczb podzielnych przez " << n << " jest: " << licznik << endl;
 }
+*/
 
 
+//zadanie 11
+/*
+{
+    int a;
+    int b;
+    cout << "Prosze podac wartosc a \n";
+    cin >> a;
+    cout << "Dziekuje;D \nTeraz poprosze wartosc b \n";
+    cin >> b;
+
+    cout << "Te liczby z Twojego przedzialu sa podzielne przez 3: \n";
+
+    if (a >= b)
+    {
+        for (int i = a; i >= b; i--)
+            if (i%3==0)
+            cout << i << endl;
+    }
+
+    else
+    {
+        for (int i = b; i >= a; i--)
+            if (i % 3 == 0)
+                cout << i << endl;
+    }
+
+}
+*/
 
 
+//zadanie 12 
+/*
+{
+    double n;
+    double suma = 0;
+    cout << "Z ilu liczb policzyc srednia arytmetyczna?\n";
+    cin >> n;
+
+    cout << "Z jakich liczb chcesz policzyc srednia?\n";
+
+    for (int i = 1; i <= n; i++)
+    {
+        double liczba;
+
+        cin >> liczba;
+
+        suma = suma + liczba;
 
 
+    }
+    double srednia;
+    srednia = suma / n;
+    cout << srednia;
 
+}
+*/
 
+//zadanie 13 
+/*
+{
+    for (int i = 100; i >= 0; i--)
+        cout << i <<endl;
+
+}
+*/
+
+//zadanie 14
+
+{
+    int a;
+    int b;
+    int c;
+
+    cout << "Podaj 3 liczby calkowite \n";
+    cin >> a >> b >> c;
+    cout << "Najmniejsza liczba to ";
+
+    int najmniejsza = a;
+    if (b < najmniejsza) {
+        najmniejsza = b;
+    }
+
+    if (c < najmniejsza) {
+        najmniejsza = c;
+    }
+
+    cout << najmniejsza;
+}
 
 
 
