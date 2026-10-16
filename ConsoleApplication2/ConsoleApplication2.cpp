@@ -3,6 +3,8 @@
 
 #include <iostream>
 using namespace std;
+#include <cstdlib> // zawiera rand() i srand()
+#include <ctime>   // potrzebne do tzw. "ziarna", ¿eby liczby by³y inne za ka¿dym razem
 
 int main()
 //zadanie1
@@ -262,6 +264,7 @@ int main()
 
 //zadanie 14
 
+/*
 {
     int a;
     int b;
@@ -282,8 +285,55 @@ int main()
 
     cout << najmniejsza;
 }
+*/
 
 
+//zadanie 15
+
+/*
+{
+    int m;
+    int n;
+    cout << "Ile liczb wylosowac?\n";
+        cin >> n;
+        cout << "Z przedzialu od 0 do ?\n";
+            cin >> m;
+
+            for (int i = 0; i < n; i++) {
+                int wylosowana = rand() % (m + 1); //tu jest ten rand, który daje losow¹ liczbe...
+                //Jeœli zrobisz rand() % m, to reszta z dzielenia zawsze bêdzie o 1 mniejsza od m,
+                // dlatego jest to +1
+                cout << wylosowana << " ";
+            }
+}
+
+*/
 
 
+//zadanie 16
 
+{
+    int a;
+    int licznik=0;
+    cout << "Podaj szczesliwy numerek z przedzialu [0; 10]: \n";
+    cin >> a;
+
+    if (a < 0 || a>10)
+        cout << "OD JEDEN DO DZIESIEC";
+
+    else {
+        for (int i = 0; i < 10; i++) {
+            int wylosowana = rand() % (10 + 1);
+
+            if (wylosowana == a) {
+                
+                licznik++;
+            }
+
+            
+        }
+        cout << licznik;
+    }
+
+    
+}
